@@ -32,7 +32,7 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         val indicator = holder.itemView.findViewById<CardView>(R.id.priority_indicator)
         val ctx = holder.itemView.context
         val rowBackground = holder.itemView.findViewById<ConstraintLayout>(R.id.row_background)
-        val action = ListFragmentDirections.actionListFragmentToUpdateFragment(dataList[position], dataList[position])
+        val action = ListFragmentDirections.actionListFragmentToUpdateFragment(dataList[position])
 
         rowBackground.setOnClickListener() {
             holder.itemView.findNavController().navigate(action)

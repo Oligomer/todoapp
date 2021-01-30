@@ -39,9 +39,6 @@ class SharedViewModel(application: Application): AndroidViewModel(application) {
 
     fun verifyDataFromUser(title: String, description: String): Boolean =
         title.isNotEmpty() && description.isNotEmpty()
-        //        if (TextUtils.isEmpty(title) || TextUtils.isEmpty(description)) {
-//            false
-//        } else !(title.isEmpty() || description.isEmpty())
 
     fun parsePriority(priority: String) = when(priority) {
         "Первоочередные дела" -> HIGH

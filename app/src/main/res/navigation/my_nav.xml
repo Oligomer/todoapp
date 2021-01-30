@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
@@ -24,6 +25,7 @@
             app:exitAnim="@anim/to_right"
             app:popEnterAnim="@anim/from_right"
             app:popExitAnim="@anim/to_left" />
+
     </fragment>
     <fragment
         android:id="@+id/addFragment"
@@ -39,7 +41,7 @@
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.dpug.todoapp.fragments.update.UpdateFragment"
-        android:label="Update">
+        android:label="update">
         <action
             android:id="@+id/action_updateFragment_to_listFragment"
             app:destination="@id/listFragment"
@@ -48,9 +50,5 @@
         <argument
             android:name="currentItem"
             app:argType="com.dpug.todoapp.data.models.ToDoData" />
-        <argument
-            android:name="item"
-            app:argType="com.dpug.todoapp.data.models.ToDoData"
-            />
     </fragment>
 </navigation>

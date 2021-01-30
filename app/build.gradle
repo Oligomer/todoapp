@@ -6,7 +6,7 @@ apply plugin: "kotlin-parcelize"
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
         applicationId "com.example.todoapp"
@@ -30,10 +30,10 @@ android {
 //        viewBinding = true
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
 
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
@@ -76,9 +76,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
 
     // Kotlin components
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.21"
-    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
-    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.21"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2"
 
     // DataBinding
 //    kapt "com.android.databinding:compiler:3.2.0-alpha10"
